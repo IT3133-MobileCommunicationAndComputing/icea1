@@ -9,6 +9,12 @@ export default function Product(props){
         qty:props.data.qty,
         price:0
     });
+
+    const handleClick = (item)=>{
+        if(item.qty> 0){
+            props.cartFunc(item);
+        }
+    }
     
     return(
         <div className="grid-item">
@@ -21,7 +27,7 @@ export default function Product(props){
                         <label for="quantity">Quantity:</label>
                         <input min={0} value={item.qty} type="number" id="quantity" name="quantity" onChange={(e)=>setItem({...item, qty:e.target.value, price:e.target.value*price})} />
                     </div>
-                    <button className="card-button" onClick={()=>item.qty > 0 ? props.cartFunc(item): null}>Add to Cart</button>
+                    <button className="card-button" onClick={()=>handleClick(item)}>Add to Cart</button>
                 </div>
             </div>
         </div>
