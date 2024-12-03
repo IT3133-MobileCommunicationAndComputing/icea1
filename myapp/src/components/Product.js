@@ -5,7 +5,7 @@ export default function Product(){
         <div className="grid-item">
 
             <div class="card">
-                <img  />
+                <img  alt='flower_image'/>
                 <div class="card-body">
                     <h5 class="card-title">Price:</h5>
                     <div class="quantity-container">

@@ -1,4 +1,4 @@
-export const flowers=[
+const flowers=[
     {id:451,name:'Rose',qty:0,img:'image1.jpeg',price:250},
     {id:452,name:'Water lilly',qty:0,img:'image4.jpeg',price:300},
     {id:453,name:'Orchid',qty:0,img:'image7.jpeg',price:500},
@@ -10,3 +10,4 @@ export const flowers=[
     {id:459,name:'Snowdrops',qty:0,img:'image9.jpeg',price:500},
 
 ]
+export default flowers
